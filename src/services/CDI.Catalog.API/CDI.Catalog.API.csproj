@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\adsha\Desenvolvimento\Workspace\WebApi\DistributedCache\src\CDI.Catalog.API\CDI.Catalog.API.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.8" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\building blocks\CDI.CacheStorage\CDI.CacheStorage.csproj" />
+    <ProjectReference Include="..\CDI.Catalog.Infrastructure\CDI.Catalog.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

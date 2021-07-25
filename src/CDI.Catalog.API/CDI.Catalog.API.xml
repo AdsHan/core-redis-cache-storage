@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CDI.Catalog.API</name>
+    </assembly>
+    <members>
+        <member name="M:DSC.Products.API.Controllers.ProductsController.Get">
+            <summary>
+            Obtêm os produtos
+            </summary>
+            <returns>Coleção de objetos da classe Produto</returns>                
+            <response code="200">Lista dos produtos</response>        
+            <response code="400">Falha na requisição</response>         
+            <response code="404">Nenhum aluno foi localizado</response>         
+        </member>
+        <member name="M:DSC.Products.API.Controllers.ProductsController.GetAsync(System.Guid)">
+            <summary>
+            Obtêm as informações do produto pelo seu Id
+            </summary>
+            <param name="id">Código do produto</param>
+            <returns>Objetos da classe Produto</returns>                
+            <response code="200">Informações do Producto</response>
+            <response code="400">Falha na requisição</response>         
+            <response code="404">O aluno não foi localizado</response>         
+        </member>
+    </members>
+</doc>
